@@ -10,7 +10,6 @@ public class PrimeTest {
     public boolean testPrime(BigInteger p, int accuracy){
         if(p.mod(two).compareTo(BigInteger.ZERO) == 0 && p.compareTo(two) != 0){
             return false;
-
         }
         
         for(int i = 0; i < accuracy; i++){
@@ -19,7 +18,6 @@ public class PrimeTest {
                 return false;
             }
         }
-
         return true;
     }
 
